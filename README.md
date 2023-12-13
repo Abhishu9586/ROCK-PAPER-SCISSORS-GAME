@@ -6,12 +6,14 @@ ROCK-PAPER-SCISSORS GAME with the help of python
 import random
 
 #game rule
+
 print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
       + "Rock vs Paper -> Paper wins \n"
       + "Rock vs Scissors -> Rock wins \n"
       + "Paper vs Scissors -> Scissor wins \n")
 
 #choose choice by user
+
 while True:
     print("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors \n")
     choice = int(input("Enter your choice : "))
@@ -30,10 +32,12 @@ while True:
         break
     
     #printing user's choice
+    
     print("User choice is : ", user_choice)
     print("Now it's Computers Turn...")
 
     #computer choise
+    
     choice_names = ["Rock","Paper","Scissors"]
     comp_choice = random.choice(choice_names)
 
@@ -42,6 +46,7 @@ while True:
     print(user_choice, "Vs", comp_choice)
 
     #obtaining the result 
+    
     if comp_choice == user_choice:
         result = "It's Draw => It's a tie"
 
@@ -61,9 +66,11 @@ while True:
         result = "Rock win => User wins"
     
     #Printing the result
+    
     print(result)
     
     #if the user want to play again
+    
     print("Do you want to play again..? (Y/N)")
     answer = input()
     if answer == 'n':
